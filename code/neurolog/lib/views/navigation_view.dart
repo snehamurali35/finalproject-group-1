@@ -1,5 +1,6 @@
 // https://api.flutter.dev/flutter/material/NavigationBar-class.html
 import 'package:flutter/material.dart';
+import 'package:neurolog/views/calendar_view.dart';
 
 class NavigationView extends StatefulWidget {
   const NavigationView({super.key});
@@ -54,7 +55,7 @@ class _NavigationViewState extends State<NavigationView> {
 
         // Set the view of the main body based on the current tab index
         body: switch (_tabIndex) {
-          0 => Center(child: Text('Calendar Placeholder')),
+          0 => CalendarView(),
           1 => Center(child: Text('Create Entry Placeholder')),
           2 => Center(child: Text('Data Visualization Placeholder')),
           _ => Placeholder(),
