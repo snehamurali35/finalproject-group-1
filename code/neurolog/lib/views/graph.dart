@@ -77,7 +77,9 @@ class MigraineBarChart extends StatelessWidget {
                       ),
                     ),
 
-                    barGroups: convertMapToBarGroups(provider.getMappings()),
+                    barGroups: convertMapToBarGroups(
+                      provider.getMappings().cast<int, int>(),
+                    ),
                   ),
                 ),
               );
