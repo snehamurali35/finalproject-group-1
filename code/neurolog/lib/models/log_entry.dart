@@ -9,7 +9,7 @@ class LogEntry {
     required this.start,
     this.severity,
     this.end}
-  )
+  );
   
   LogEntry.withUpdatedFields (LogEntry entry, int newSeverity, DateTime newEnd)
     : date = entry.date,
