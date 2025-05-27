@@ -99,41 +99,41 @@ class MigraineBarChart extends StatelessWidget {
     }).toList();
   }
 
-  List<BarChartGroupData> generateSampleData() {
-    final sampleData = [
-      3,
-      4,
-      2,
-      1,
-      0,
-      1,
-      2,
-      3,
-      5,
-      6,
-      8,
-      10,
-      9,
-      7,
-      6,
-      4,
-      3,
-      2,
-      1,
-      0,
-      1,
-      3,
-      4,
-      2,
-    ];
+  // List<BarChartGroupData> generateSampleData() {
+  //   final sampleData = [
+  //     3,
+  //     4,
+  //     2,
+  //     1,
+  //     0,
+  //     1,
+  //     2,
+  //     3,
+  //     5,
+  //     6,
+  //     8,
+  //     10,
+  //     9,
+  //     7,
+  //     6,
+  //     4,
+  //     3,
+  //     2,
+  //     1,
+  //     0,
+  //     1,
+  //     3,
+  //     4,
+  //     2,
+  //   ];
 
-    return List.generate(sampleData.length, (index) {
-      return BarChartGroupData(
-        x: index,
-        barRods: [
-          BarChartRodData(toY: sampleData[index].toDouble(), width: 12),
-        ],
-      );
-    });
-  }
+  //   return List.generate(sampleData.length, (index) {
+  //     return BarChartGroupData(
+  //       x: index,
+  //       barRods: [
+  //         BarChartRodData(toY: sampleData[index].toDouble(), width: 12),
+  //       ],
+  //     );
+  //   });
+  // }
 }
